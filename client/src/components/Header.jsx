@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Navbar className='border-b-2'>
       <Link to = '/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-      <div className='px-2 py-1 bg-gradient-to-r from-cyan-600 to-blue-500 ... rounded-lg text-white' >
+      <div className='px-2 py-1 bg-gradient-to-br from-purple-600 to-cyan-500 rounded-lg text-white' >
         LearnLabs
       </div>
       </Link>
