@@ -6,7 +6,7 @@ import authRoutes from './routes/auth.route.js'
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO)
+mongoose.connect(process.env.MONGO_URL)
     .then(() => {
         console.log('MongoDb is connected')
     }).catch((err) => {
