@@ -4,9 +4,8 @@ import { Navigate, Outlet } from 'react-router-dom'
 
 const PrivateRoute = () => {
     const {currentUser} = useSelector(state => state.user);
-    const isAdmin = currentUser.email === 'nafeesalamofficial@gmail.com'
   return (
-    currentUser && isAdmin ? <Outlet /> :<Navigate to='/signin' />
+    currentUser && currentUser.isAdmin ? <Outlet /> :<Navigate to='/signin' />
   )
 }
 
