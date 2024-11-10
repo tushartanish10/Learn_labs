@@ -67,7 +67,7 @@ export default function PostPage() {
         <Button color='gray' pill size='xs'>
           {post && post.category}
         </Button>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PVyJFzx7zig?si=GIlNvFoxK-tyLF1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${post.youtubeUrl}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </Link>
       <div className='flex justify-between p-3 border-b border-slate-500 mx-auto w-full max-w-2xl text-xs'>
         <span>{post && new Date(post.createdAt).toLocaleDateString()}</span>
