@@ -9,6 +9,7 @@ import SignIn from './pages/Signin'
 import Projects from './pages/Projects'
 import Footer from './components/Footer'
 import PrivateRoute from './components/PrivateRoute'
+import PostPage from './pages/PostPage'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/signup' element = {<SignUp />} />
       <Route path='/signin' element = {<SignIn />} />
       <Route path='/projects' element = {<Projects />} />
+      <Route path='/post/:postSlug' element={<PostPage />} />
     </Routes>
     <Footer />
     </BrowserRouter>

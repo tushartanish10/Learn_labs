@@ -18,6 +18,9 @@ const postSchema = new mongoose.Schema(
         youtubeUrl: {
             type: String,
         },
+        image: {
+            type: String,
+        },
         category: {
             type: String,
             default: 'uncategorized'

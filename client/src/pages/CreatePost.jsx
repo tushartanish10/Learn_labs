@@ -73,6 +73,17 @@ const CreatePost = () => {
           />
           {/* <Button type='button' gradientDuoTone='purpleToBlue' size='sm' outline>Done</Button> */}
         </div>
+        <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
+          <TextInput type='text' placeholder='Paste the image url'
+            required
+            id='videoUrl'
+            className='flex-1'
+            onChange={(e) => 
+              setFormData({...formdata, image: e.target.value})
+            }
+          />
+          {/* <Button type='button' gradientDuoTone='purpleToBlue' size='sm' outline>Done</Button> */}
+        </div>
         <ReactQuill 
           theme='snow'
           placeholder='write something...'
