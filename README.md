@@ -19,12 +19,5 @@ LearnLabs is a collection of programming labs and practice assignments designed 
    ```bash
    git clone https://github.com/tushartanish10/Learn_labs.git
    cd Learn_labs
-Learn_labs/
-├── DSA_Labs/
-│   ├── lab1.cpp
-│   ├── lab2.cpp
-├── Web_Projects/
-│   ├── index.html
-│   └── script.js
-├── README.md
+
 
